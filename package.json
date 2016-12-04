@@ -1,0 +1,39 @@
+{
+  "name": "httpheaderprovider",
+  "version": "0.1.0",
+  "description": "Replacement for HttpProvider from web3.js which allows headers to be set",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "homepage": "https://github.com/EthereumEx/httpheaderprovider#README",
+  "keywords": [
+    "ethereum",
+    "web3"
+  ],
+  "repository": {
+    "github":"https://github.com/EthereumEx/httpheaderprovider"
+  },
+  "author": "shawn cicoria",
+  "contributors": [
+    "Shawn Cicoria"
+  ],
+  "maintainers": [
+    "Shawn Cicoria"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "ethereumjs-testrpc": "^3.0.3",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "http-proxy": "^1.16.1",
+    "mocha": "^3.2.0",
+    "should": "^11.1.1"
+  },
+  "dependencies": {
+    "debug": "^2.3.3",
+    "web3": "^0.17.0-beta"
+  }
+}
