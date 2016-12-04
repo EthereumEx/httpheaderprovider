@@ -10,6 +10,7 @@ First you need to grab the package:
 
 ```
 npm install --save httpheaderhrovider
+```
 
 In your JavaScript project
 
@@ -17,7 +18,7 @@ In your JavaScript project
 var Web3 = require('web3');
 var web3 = new Web3();
 
-var headerprovider = require('../lib');
+var headerprovider = require('httpheaderprovider');
 
 var headers = {
   "header1": "valueOf1",
