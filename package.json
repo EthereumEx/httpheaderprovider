@@ -1,6 +1,6 @@
 {
   "name": "httpheaderprovider",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Replacement for HttpProvider from web3.js which allows headers to be set",
   "main": "lib/index.js",
   "scripts": {
@@ -11,7 +11,6 @@
     "ethereum",
     "web3"
   ],
-
   "repository": {
     "type": "git",
     "url": "https://github.com/EthereumEx/httpheaderprovider"
