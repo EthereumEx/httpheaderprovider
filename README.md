@@ -54,7 +54,7 @@ npm install --save httpheaderprovider
 
 ```
 
-In your JavaScript project instead of create an instance of the `web3.providers.HttpProvider` in place, create an instance of `headerprovider` with the same parameters along with a object that is a key/value property object.
+In your JavaScript project instead of create an instance of the `web3.providers.HttpProvider` in place, create an instance of `HttpHeaderProvider` with the same parameters along with a object that is a key/value property object.
 
 ```javascript
 var Web3 = require('web3');
