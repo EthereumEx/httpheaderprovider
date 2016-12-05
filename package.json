@@ -6,13 +6,15 @@
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha"
   },
-  "homepage": "https://github.com/EthereumEx/httpheaderprovider#README",
+  "homepage": "https://github.com/EthereumEx/httpheaderprovider",
   "keywords": [
     "ethereum",
     "web3"
   ],
+
   "repository": {
-    "github": "https://github.com/EthereumEx/httpheaderprovider"
+    "type": "git",
+    "url": "https://github.com/EthereumEx/httpheaderprovider"
   },
   "author": "shawn cicoria",
   "contributors": [
