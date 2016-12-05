@@ -3,8 +3,8 @@
 var Web3 = require('web3');
 var web3 = new Web3();
 
-var headerprovider = require('../lib');
-var provider = new headerprovider('http://localhost:8545');
+var HttpHeaderProvider = require('../lib');
+var provider = new HttpHeaderProvider('http://localhost:8545');
 
 web3.setProvider(provider);
 
