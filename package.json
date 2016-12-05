@@ -1,6 +1,6 @@
 {
   "name": "httpheaderprovider",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Replacement for HttpProvider from web3.js which allows headers to be set",
   "main": "lib/index.js",
   "scripts": {
