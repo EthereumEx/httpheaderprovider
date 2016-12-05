@@ -1,10 +1,10 @@
 # HttpHeaderProvider - A Replacement Web3.js HttpProvider supporting custom HTTP Headers
-This module can be used in place of `HttpProvider` from web3.
+This module can be used in place of `HttpProvider` from [web3.js](https://github.com/ethereum/web3.js/).
 
 Once in place, the constructor offers a `headers` parameter that is a `key/value` object that has the headers to be set.
 
 ## Purpose
-The [`JSON-RPC`](https://github.com/ethereum/wiki/wiki/JSON-RPC) endpoint on an [Ethereum client](https://geth.ethereum.org) provide no authentication boundary. All validation is based upon the presence of a signed transaction or not.
+The [`JSON-RPC`](https://github.com/ethereum/wiki/wiki/JSON-RPC) endpoint on an [Ethereum client](https://geth.ethereum.org) provides no authentication or authorization boundary. All validation happens after the client receives the reqeust and processes it, and true validation is based upon the presence of a signed transaction or not.
 
 With no protection at [layer 7](https://www.nginx.com/resources/glossary/layer-7-load-balancing/), this does pose a DoS risk vector. However, by putting a simple layer 7 proxy in front of Geth or whatever Ethereum client is being used that has the RPC endpoint open, that proxy could validate something simple like an API key or potentially an OAuth token.
 
@@ -12,10 +12,9 @@ With no protection at [layer 7](https://www.nginx.com/resources/glossary/layer-7
 A reason to employ a Service such as [Azure API Management](https://azure.microsoft.com/en-us/services/api-management/) off-loads other resposibilities such as dealing with both Layer 3/4 and layer 7 DoS issues. 
 
 #### Authorization
-API Managment employs simple "token" or API Key approach in addition to OAuth bearer tokens that can be granted by Azure Active Directory, then added to the `Authorization : Bearer &lt;token&gt;` header.
+API Managment employs simple `token` or API Key approach in addition to OAuth bearer tokens that can be granted by Azure Active Directory, then added to the `Authorization : Bearer <token>` header.
 #### Throttleing
 API Manaement can also throttle based on various policies, as well as authorize only certiain calls to specific clients, all through a configuration oriented approach.
-
 
 # Usage and Approach
 
