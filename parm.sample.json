@@ -1,0 +1,5 @@
+{
+    "apikey": "get from developer dashboard",
+    "address": "0x54b0b4a7097847a84220f38bdc4ba672377783fd",
+    "apiurl": "https://<YOURS>.azure-api.net/<PATH IF THERE/"
+}
